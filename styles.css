@@ -43,7 +43,8 @@ nav {
 }
 
 .home-left {
-	position: relative;
+    position: relative;
+    /* You Put -55% Left to match the 55% Width ~ hide it from the view then bring it back. */
 	left: -55%;
 	width: 55%;
 	height: 100vh;
@@ -59,4 +60,12 @@ nav {
     height: 500px;
     overflow: hidden;
     z-index: 2;
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    filter: grayscale(60%);
 }
